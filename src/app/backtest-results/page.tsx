@@ -77,10 +77,16 @@ const BacktestResults: React.FC = () => {
               <td className="py-2 px-4 border-b">{item.end}</td>
               <td className="py-2 px-4 border-b">{item.interval}</td>
               <td className="py-2 px-4 border-b">{item.trades}</td>
-              <td className="py-2 px-4 border-b">{item.win_rate}%</td>
-              <td className="py-2 px-4 border-b">{item.return}</td>
-              <td className="py-2 px-4 border-b">{item.buyhold_return}</td>
-              <td className="py-2 px-4 border-b">{item.max_drawdown}%</td>
+              <td className="py-2 px-4 border-b">
+                {item.win_rate.toFixed(2)}%
+              </td>
+              <td className="py-2 px-4 border-b">{item.return.toFixed(2)}%</td>
+              <td className="py-2 px-4 border-b">
+                {item.buyhold_return.toFixed(2)}%
+              </td>
+              <td className="py-2 px-4 border-b">
+                {item.max_drawdown.toFixed(2)}%
+              </td>
               <td className="py-2 px-4 border-b">{item.sharpe_ratio}</td>
               <td className="py-2 px-4 border-b">{item.kelly_criterion}</td>
             </tr>
