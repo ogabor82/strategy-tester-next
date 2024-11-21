@@ -30,7 +30,6 @@ interface BacktestResultsViewProps {
 export default function BacktestResultsView({
   data,
 }: BacktestResultsViewProps) {
-  console.log(data);
   const columns: GridColDef<BacktestResult>[] = [
     { field: "id", headerName: "ID", width: 90 },
     { field: "ticker", headerName: "Ticker", width: 130 },

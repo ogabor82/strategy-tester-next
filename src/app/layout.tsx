@@ -55,6 +55,14 @@ export default function RootLayout({
                 Strategies
               </Link>
             </li>
+            <li className="menu-item">
+              <Link
+                href="/configurations"
+                className="text-white hover:text-gray-400"
+              >
+                Configurations
+              </Link>
+            </li>
           </ul>
         </nav>
         {children}
