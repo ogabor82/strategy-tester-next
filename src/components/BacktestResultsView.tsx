@@ -18,6 +18,7 @@ type BacktestResult = {
   ticker: string;
   trades: number;
   win_rate: number;
+  strategy_name: string;
 };
 
 interface BacktestResultsViewProps {
@@ -33,6 +34,8 @@ export default function BacktestResultsView({
   const columns: GridColDef<BacktestResult>[] = [
     { field: "id", headerName: "ID", width: 90 },
     { field: "ticker", headerName: "Ticker", width: 130 },
+    { field: "strategy_name", headerName: "Strategy", width: 130 },
+    { field: "kelly_criterion", headerName: "Kelly Criterion", width: 130 },
     { field: "interval", headerName: "Interval", width: 130 },
     {
       field: "return",
