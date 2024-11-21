@@ -28,6 +28,31 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <nav className="bg-gray-800 p-4">
+          <ul className="flex space-x-4">
+            <li className="menu-item">
+              <a
+                href="/backtest-sessions"
+                className="text-white hover:text-gray-400"
+              >
+                Backtest Sessions
+              </a>
+            </li>
+            <li className="menu-item">
+              <a
+                href="/backtest-results"
+                className="text-white hover:text-gray-400"
+              >
+                Backtest Results
+              </a>
+            </li>
+            <li className="menu-item">
+              <a href="/strategies" className="text-white hover:text-gray-400">
+                Strategies
+              </a>
+            </li>
+          </ul>
+        </nav>
         {children}
       </body>
     </html>
