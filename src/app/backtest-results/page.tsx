@@ -30,7 +30,7 @@ const BacktestResults: React.FC = () => {
     const fetchBacktestResults = async () => {
       try {
         const response = await axios.get(
-          "http://192.168.0.13:5000/backtest-results"
+          "http://127.0.0.1:5000/backtest-results"
         );
         setData(response.data);
       } catch (err) {
