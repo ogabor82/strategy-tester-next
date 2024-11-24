@@ -57,10 +57,10 @@ export default function RootLayout({
             </li>
             <li className="menu-item">
               <Link
-                href="/configurations"
+                href="/timeframe-sets"
                 className="text-white hover:text-gray-400"
               >
-                Configurations
+                Timeframe Sets
               </Link>
             </li>
           </ul>
