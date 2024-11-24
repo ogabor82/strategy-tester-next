@@ -63,6 +63,14 @@ export default function RootLayout({
                 Timeframe Sets
               </Link>
             </li>
+            <li className="menu-item">
+              <Link
+                href="/optimization-sessions"
+                className="text-white hover:text-gray-400"
+              >
+                Optimization Sessions
+              </Link>
+            </li>
           </ul>
         </nav>
         {children}
